@@ -103,6 +103,104 @@
 </section>
 
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+          <img src="./static/images/teaser.jpg" class="interpolation-image" alt="Interpolate start reference image." />
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">AffordanCE-driven Next-Best-View planning policy (ACE-NBV)</span> is a method that aims to find a feasible grasp for target object via continuously observing scenes from new viewpoints.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Grasping occluded objects in cluttered environments is an essential component in complex robotic
+            manipulation tasks. In
+            this paper, we introduce an <span class="dnerf">AffordanCE-driven Next-Best-View planning policy
+              (ACE-NBV)</span> that tries to find a feasible
+            grasp for target object via continuously observing scenes from new viewpoints. This policy is motivated by
+            the
+            observation that the grasp affordances of an occluded object can be better-measured under the view when the
+            view-direction are the same as the grasp view.
+            Specifically, our method leverages the paradigm of novel view imagery to predict the grasps affordances
+            under previously
+            unobserved view, and select next observation view based on the highest imagined grasp quality of the target
+            object.
+          </p>
+          <p>
+            The experimental results in simulation and on a real robot demonstrate the effectiveness of the proposed
+            affordance-driven next-best-view planning policy. Additional results, code, and videos of real robot
+            experiments can be
+            found in the supplementary materials.
+            We present the first method capable of photorealistically reconstructing a non-rigidly
+            deforming scene using photos/videos captured casually from mobile phones.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Method Overview</h2>
+          <img src="./static/images/policy.jpg"  style="width: 50%;" class="interpolation-image" alt="Interpolate start reference image." />
+          <div class="content has-text-justified">
+            <p>
+              We consider this active grasp problem: picking up an occluded target object in
+              cluttered scenes using a robotic arm with an eye-in-hand depth camera.
+              The target object is partly visible within the initial camera view field and a 3D
+              bounding box is given to locate the target object.
+              Our goal is to design a policy that moves the robotic arm to find a feasible grasp for the target object.
+            </p>
+          </div>
+        <h2 class="title is-4">Network Architecture</h2>
+        <img src="./static/images/overview.jpg" class="interpolation-image" alt="Interpolate start reference image." />
+        <div class="content has-text-justified">
+          <p>
+            The input is a TSDF voxel field <b>M</b> obtained from the depth image. The
+            upper branch predicts the grasp affordances for the target object and the lower branch synthesizes the depth image of
+            different views, including the previously unseen views. Both branches share the same tri-plane feature volume
+            <b>C</b>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method Overview. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Results. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Results</h2>
+        <h2 class="title is-4">Simulated Experiments</h2>
+        <img src="./static/images/sim_case1.jpg" class="interpolation-image"
+        alt="Interpolate start reference image." />
+        <img src="./static/images/sim_case2.jpg" class="interpolation-image" alt="Interpolate start reference image." />
+        <p><br></p>
+        <h2 class="title is-4">Real Robot Experiments</h2>
+        <img src="./static/images/real_case1.jpg"   style="width: 70%;" class="interpolation-image" alt="Interpolate start reference image." />
+        </div>
+      </div>
+    </div>
+    <!--/ Results. -->
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
