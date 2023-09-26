@@ -1,6 +1,6 @@
-# ace-nbv.github.io
+# ace-nbv
 
-This is the repository that contains source code for the [ACE-NBV website](https://sszxc.net/ace-nbv.github.io/).
+This is the repository that contains source code for the [ACE-NBV website](https://sszxc.net/ace-nbv/).
 
 We thanks the author of <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> for sharing this awesome website tempelate.
 
